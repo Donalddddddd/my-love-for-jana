@@ -1,0 +1,607 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #5a3d5c;
+    background: linear-gradient(135deg, #fff9f9 0%, #fff5e6 100%);
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ffafcc, #ffc8dd, #ffddd2);
+    color: #7d4f50;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 5px solid #ffafcc;
+    box-shadow: 0 4px 12px rgba(255, 175, 204, 0.3);
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Section Common Styles */
+.section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #d46a6a;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: #8a6d8b;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Milestone Tracker */
+.milestone-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2);
+    border: 2px solid #ffd6e7;
+}
+
+.milestone-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #7d4f50;
+}
+
+.milestone-intro .highlight {
+    background: linear-gradient(to right, #ffafcc, #ffddd2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.counter-item {
+    text-align: center;
+    background: linear-gradient(145deg, #fff0f5, #fff9f0);
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+    min-width: 140px;
+    box-shadow: 5px 5px 15px rgba(212, 106, 106, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.8);
+    border: 2px solid #ffd6e7;
+    transition: transform 0.3s ease;
+}
+
+.counter-item:hover {
+    transform: translateY(-5px);
+}
+
+.counter-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #d46a6a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.counter-label {
+    font-size: 1.2rem;
+    color: #8a6d8b;
+    font-weight: 500;
+}
+
+.total-time {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #d46a6a;
+    font-weight: 600;
+}
+
+.total-time span {
+    background: linear-gradient(to right, #ffafcc, #ffddd2);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+/* Memory Map */
+.memory-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.memory-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.photocard {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(212, 106, 106, 0.15);
+    transition: all 0.3s ease;
+    border: 3px solid #ffddd2;
+}
+
+.photocard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(212, 106, 106, 0.25);
+}
+
+.photo-frame {
+    height: 250px;
+    overflow: hidden;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.photocard:hover .photo-frame img {
+    transform: scale(1.05);
+}
+
+.photo-caption {
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #7d4f50;
+    background: linear-gradient(to right, #fff9f0, #fff0f5);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+/* Love Book */
+.book-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.book {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.book-cover {
+    background: linear-gradient(to right, #d46a6a, #ff8e8e);
+    border-radius: 10px 20px 20px 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(212, 106, 106, 0.3);
+    transition: transform 0.5s ease;
+    border: 5px solid #ffddd2;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    z-index: 1;
+}
+
+.book-cover:hover {
+    transform: scale(1.02);
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cover-content h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heart-icon {
+    font-size: 4rem;
+    color: #ffddd2;
+    margin: 1.5rem 0;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cover-content p {
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.book-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(212, 106, 106, 0.2);
+    margin-top: 2rem;
+    border: 3px solid #ffddd2;
+    display: none;
+}
+
+.book-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #ffd6e7;
+}
+
+.nav-btn {
+    background: linear-gradient(to right, #ffafcc, #ffddd2);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #7d4f50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(to right, #ff8fab, #ffc2d1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 175, 204, 0.4);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.page-counter {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #d46a6a;
+}
+
+.page-content {
+    min-height: 300px;
+    padding: 1rem 0;
+}
+
+.page {
+    padding: 1.5rem;
+    background: #fff9f9;
+    border-radius: 10px;
+    border-left: 5px solid #ffafcc;
+}
+
+.page h3 {
+    color: #d46a6a;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.page p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #5a3d5c;
+    margin-bottom: 1.5rem;
+}
+
+.page-quote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #8a6d8b;
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 221, 210, 0.3);
+    border-radius: 10px;
+    border-left: 3px solid #ffafcc;
+    border-right: 3px solid #ffafcc;
+    font-family: 'Dancing Script', cursive;
+}
+
+.page-quote i {
+    color: #ff8e8e;
+    margin: 0 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    display: block;
+    margin: 2rem auto 0;
+    background: linear-gradient(to right, #ff8e8e, #d46a6a);
+    color: white;
+    border: none;
+    padding: 0.9rem 2.5rem;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(212, 106, 106, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #7d4f50, #a86a6b);
+    color: #fff9f9;
+    padding: 3rem 0 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-love {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-love h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffddd2;
+}
+
+.footer-love p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.love-message {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #ffafcc;
+}
+
+.love-message p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.footer-extra {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-extra h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffddd2;
+    font-family: 'Dancing Script', cursive;
+}
+
+.love-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.note:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.note i {
+    font-size: 1.5rem;
+    color: #ffafcc;
+}
+
+.note p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.footer-bottom i {
+    color: #ff8e8e;
+    margin: 0 0.3rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .memory-row {
+        gap: 1.5rem;
+    }
+    
+    .photocard {
+        min-width: 280px;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .counter-container {
+        gap: 1rem;
+    }
+    
+    .counter-item {
+        min-width: 120px;
+        padding: 1rem 0.5rem;
+    }
+    
+    .counter-value {
+        font-size: 2.5rem;
+    }
+    
+    .book-cover {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cover-content h3 {
+        font-size: 2.5rem;
+    }
+    
+    .heart-icon {
+        font-size: 3rem;
+    }
+    
+    .page-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header .subtitle {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    .counter-item {
+        min-width: calc(50% - 1rem);
+    }
+    
+    .photocard {
+        min-width: 100%;
+    }
+    
+    .book-content {
+        padding: 1.5rem;
+    }
+    
+    .page h3 {
+        font-size: 1.6rem;
+    }
+    
+    .page p, .page-quote {
+        font-size: 1.1rem;
+    }
+}
